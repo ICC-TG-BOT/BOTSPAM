@@ -2,14 +2,14 @@ from os import getenv
 
 from decouple import config
 
-APP_ID = getenv("APP_ID", "16942102")
+APP_ID = getenv("APP_ID", "13976276")
 
-API_HASH = getenv("API_HASH", "eb72f958fd9dbad872a9ff1836ad96e6")
+API_HASH = getenv("API_HASH", "7f024cbc744a2f44569c3641b5ccecb7")
 
-HEROKU_APP_NAME = config("HEROKU_APP_NAME", None)
-HEROKU_API_KEY = config("HEROKU_API_KEY", None)
+HEROKU_APP_NAME = config("HEROKU_APP_NAME", "toxic-spam-bot")
+HEROKU_API_KEY = config("HEROKU_API_KEY", "5df78882-53e8-4b19-b8af-fde77ba88782")
 
-BOT_TOKEN = config("BOT_TOKEN", default=None)
+BOT_TOKEN = config("BOT_TOKEN", "5701196266:AAGe0hsTmosdgBpsluhfIp0Q_CIVoBsCrQY")
 BOT_TOKEN2 = config("BOT_TOKEN2", default=None)
 BOT_TOKEN3 = config("BOT_TOKEN3", default=None)
 BOT_TOKEN4 = config("BOT_TOKEN4", default=None)
@@ -35,19 +35,18 @@ BOT_TOKEN23 = config("BOT_TOKEN23", default=None)
 BOT_TOKEN24 = config("BOT_TOKEN24", default=None)
 BOT_TOKEN25 = config("BOT_TOKEN25", default=None)
 try:
-    SUDO_USERS = str(getenv("SUDO_USERS", "123 456")).split(" ")
+    SUDO_USERS = str(getenv("SUDO_USERS", "6020570673")).split("5348648456")
 except Exception:
-    SUDO_USERS = str(getenv("SUDO_USERS", "123 456"))
+    SUDO_USERS = str(getenv("SUDO_USERS", "5348648456"))
 
-START_MESSAGE = getenv("START_MESSAGE", None)
+START_MESSAGE = getenv("START_MESSAGE", "🌹𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐓𝐎 𝐒𝐏𝐀𝐌 𝐁𝐎𝐓🌹")
 
-PING_PIC = getenv("PING_PIC", None)
+PING_PIC = getenv("PING_PIC", "https://te.legra.ph/file/12c085eae53b7faec8f1e.jpg")
 
-START_PIC = getenv("START_PIC", None)
+START_PIC = getenv("START_PIC", "https://te.legra.ph/file/12c085eae53b7faec8f1e.jpg")
 
 
-HELP_MSG = getenv("HELP_MSG", None)
-HELP_PIC = getenv("HELP_PIC", "https://graph.org/file/89ed7d3a2bd8aa2c61385.jpg")
+HELP_MSG = getenv("HELP_MSG", "𝐖𝐇𝐀𝐓 𝐓𝐘𝐏𝐄 𝐈 𝐇𝐄𝐋𝐏 𝐘𝐎𝐔")
+HELP_PIC = getenv("HELP_PIC", "https://te.legra.ph/file/12c085eae53b7faec8f1e.jpg")
 LOG_CHANNEL = getenv("LOG_CHANNEL", None)
-
 HANDLER = getenv("HANDLER", "/")
