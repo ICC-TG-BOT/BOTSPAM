@@ -35,9 +35,9 @@ BOT_TOKEN23 = config("BOT_TOKEN23", default=None)
 BOT_TOKEN24 = config("BOT_TOKEN24", default=None)
 BOT_TOKEN25 = config("BOT_TOKEN25", default=None)
 try:
-    SUDO_USERS = str(getenv("SUDO_USERS", "6020570673")).split("5348648456")
+    SUDO_USERS = str(getenv("SUDO_USERS", "6020570673 5348648456")).split(" ")
 except Exception:
-    SUDO_USERS = str(getenv("SUDO_USERS", "5348648456"))
+    SUDO_USERS = str(getenv("SUDO_USERS", "6020570673 5348648456"))
 
 START_MESSAGE = getenv("START_MESSAGE", "🌹𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐓𝐎 𝐒𝐏𝐀𝐌 𝐁𝐎𝐓🌹")
 
